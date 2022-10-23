@@ -105,10 +105,7 @@ class Spaceship(object):
             return False
         return True
     
-    #One problem you ran into was when the plane went to the border, they would just stop moving
-    #Hence, one way to fix that problem is to make a function bounce() that will relocate the plane
-    #once it hit the border.  This way, when the plane is out of bounds, it does not just stay there.
-    #**Check in the main function for more details**
+    
 
     def bounce(self): 
         if self.x <= 0:
@@ -550,7 +547,7 @@ while run:
         if keys_pressed[pygame.K_RIGHT]:
             player1.turnRight()
         if keys_pressed[pygame.K_UP]:
-            # Here, I applied some changes.  Two conditionals instead of one.
+           
             # First if statement checks if the plane is in bounds, and if it 
             # is not in bounds, then it "bounces" the plane.  What this will be do
             # is move the player forward (or backwards depending on which bounds) 
